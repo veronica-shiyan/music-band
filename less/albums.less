@@ -1,0 +1,120 @@
+.albums {
+  .wrapper ();
+  margin-bottom: 40px;
+
+  @media @tablet-widths {
+    box-sizing: border-box;
+    margin-bottom: 0;
+    padding-right: 50px;
+  }
+}
+
+.albums__image {
+  margin-bottom: 40px;
+
+  @media @tablet-widths {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+.albums__title {
+  margin: 0;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: @font-oswald;
+  font-size: 30px;
+  line-height: 32px;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+.albums__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.albums__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media @tablet-widths {
+    margin-bottom: 50px;
+  }
+}
+
+.albums__name {
+  width: 90px;
+  margin: 0;
+  font-family: @font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    width: 120px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media @desktop-widths {
+    width: 220px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+.albums__year {
+  position: relative;
+  margin: 0;
+  padding-left: 16px;
+  font-family: @font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: @font-normal-color;
+   
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #e4dddb;
+    border-radius: 50%;
+  }
+
+  @media @tablet-widths {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media @desktop-widths {
+    padding-left: 22px;
+    font-size: 24px;
+    line-height: 30px;
+
+    &::before {
+      top: 8px;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

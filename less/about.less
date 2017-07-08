@@ -1,0 +1,244 @@
+.about {
+  padding-top: 10px;
+  background-color: @bg-middle; 
+  background-image: url("../img/grey-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    padding-top: 30px;
+  }
+}
+
+.about__list {
+  .container ();
+  min-height: 558px;
+
+  @media @tablet-widths {
+    min-height: 482px;
+  }
+
+  @media @desktop-widths {
+    min-height: 770px;
+  }
+}
+
+.about__item {
+  .container ();
+
+  @media @tablet-widths {
+    align-items: flex-end;
+  }
+}
+
+.about__photo {
+  .wrapper ();
+  position: relative;
+  margin-bottom: 10px;
+
+  @media @tablet-widths {
+    margin-bottom: 0;
+  }
+}
+
+.about__name {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  text-align: center;
+}
+
+.about__name span {
+  display: block;
+  font-family: @font-oswald;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 55px;
+  color: @font-light-color;
+  text-transform: uppercase;
+
+  &:last-child {
+    color: @font-normal-color;
+  }
+
+  @media @desktop-widths {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+.about__description {
+  .wrapper ();
+
+  @media @tablet-widths {
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 40px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 75px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: @font-oswald;
+  font-size: 30px;
+  line-height: 32px;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    margin-bottom: 35px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  @media @desktop-widths {
+    margin-bottom: 45px;
+  }
+}
+
+.about__text {
+  margin: 0;
+  text-align: center;
+  font-family: @font-lora;
+  font-size: 15px;
+  line-height: 22px;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media @desktop-widths {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+.about__slide-btn {
+  position: absolute;
+  z-index: 3;
+  top: 75px;
+  width: 20px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @media @tablet-widths {
+    top: 120px;
+    width: 30px;
+    height: 55px;
+  }
+
+  @media @desktop-widths {
+    top: 215px;
+    width: 50px;
+    height: 90px;
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
+
+.about__slide-btn--next {
+  right: 0;
+  background-image: url("../img/right-arrow.png");
+}
+
+.about__slide-btn--prev {
+  left: 0;
+  background-image: url("../img/left-arrow.png");
+}
+
+.about input[type="radio"] {
+  display: none;
+}
+
+.about__turn {
+  display: none;
+
+  @media @desktop-widths {
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 90px;
+    right: 152px;
+    transform: rotate(-90deg);
+    text-align: right;
+  }
+}
+
+.about__switch {
+
+  @media @desktop-widths {
+    position: relative;
+    display: block;
+    margin-bottom: 27px;
+    padding-right: 100px;
+    font-family: @font-lora;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #e4dddb;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      top: -1px;
+      left: 122px;
+      background-color: #e4dddb;
+      border-radius: 50%;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 146px;
+    }
+  }
+}
+
+.about__switch:nth-child(1)::before {
+  content: "vocalist";
+}
+
+.about__switch:nth-child(2)::before {
+  content: "guitar";
+}
+
+.about__switch:nth-child(3)::before {
+  content: "bass";
+}
+
+.about__switch:nth-child(4)::before {
+  content: "drums";
+}
+
+.about__switch:nth-child(5)::before {
+  content: "electronics";
+}

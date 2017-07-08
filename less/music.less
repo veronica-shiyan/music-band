@@ -1,0 +1,22 @@
+.music {
+  padding-top: 40px;
+  background-color: @bg-light;
+  background-image: url("../img/light-grey-background.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  color: @font-normal-color;
+
+  @media @tablet-widths {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media @desktop-widths {
+    padding-bottom: 70px;
+  }
+}
+
+.music__container {
+  .container ();
+}
