@@ -237,7 +237,7 @@
       <div class="tours__container">
         <h2 class="tours__title">Tour dates</h2>
         <div class="shows__wrapper">
-          <button class="shows__list-btn tours__list-btn--prev" type="button">Previous</button>
+          <button class="shows__btn shows__btn--prev" type="button">Previous</button>
           <ul class="shows__list">
             <li class="shows__item shows__item--past">
               <span class="shows__date">Alexandra palace, 10/03/2015</span>
@@ -288,7 +288,7 @@
               <span class="shows__place">London, United Kindom</span>
             </li>
           </ul>
-          <button class="shows__list-btn shows__list-btn--next" type="button">Next</button>
+          <button class="shows__btn shows__btn--next" type="button">Next</button>
         </div>
         <div class="ticket">
           <div class="ticket__wrapper">
@@ -325,29 +325,41 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer" id="contact">
-    <div class="container">
-      <h1 class="footer-title">Contact</h1>
-      <span class="footer-phone">+48 202 - 555 - 0114</span>
-      <div class="footer-middle">
-        <form class="footer-form" action="#" method="get">
+  <footer class="page-footer" id="contact">
+    <div class="page-footer__container">
+      <h1 class="page-footer__title">Contact</h1>
+      <span class="page-footer__phone">+48 202 - 555 - 0114</span>
+      <div class="page-footer__middle">
+        <form class="page-footer__form" action="#" method="get">
           <label for="subscribe">Subscribe</label>
           <input type="text" name="subscribe" id="subscribe">
         </form>
-        <a class="btn-social btn-facebook" href="#">Facebook</a>
-        <a class="btn-social btn-youtube" href="#">youtube</a>
-      </div>
-      <div class="clearfix">
-        <p class="footer-copyright">Copyright 2015 © by The Band</p>
-        <div class="footer-menu">
-          <ul>
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#music">music</a></li>
-            <li><a href="#tours">tours</a></li>
-            <li><a class="active">contact</a></li>
-          </ul>
+        <div class="page-footer__social">
+          <a class="page-footer__btn page-footer__btn--facebook" href="#">Facebook</a>
+          <a class="page-footer__btn page-footer__btn--youtube" href="#">youtube</a>
         </div>
+      </div>
+      <div class="page-footer__menu">
+        <p class="page-footer__copyright">Copyright 2015 © by The Band</p>
+        <nav class="page-footer__navigation">
+          <ul class="page-footer__list">
+            <li class="page-footer__item">
+              <a class="page-footer__name">home</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__name" href="#about">about</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__name" href="#music">music</a>
+            </li>
+            <li class="page-footer__item">
+              <a class="page-footer__name" href="#tours">tours</a>
+            </li>
+            <li class="page-footer__item page-footer__item--active">
+              <a class="page-footer__name page-footer__name--active" href="#contact">contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </footer>
